@@ -34,13 +34,9 @@ else:
 if can_swim == "yes" and adult_here == "yes":
     print("Deep pool   : Allowed - you can swim and an adult is present.")
 
-
-# ---------- PART 4: OR - either one is enough to raise the caution ----------
 if age < 12 or can_swim == "no":
     print("Shallow only: Stay in the shallow end today.")
 
-
-# ---------- PART 5: NOT - but only once we trust the answer ----------
 if adult_known == True and not (adult_here == "yes"):
     print("Reminder    : No adult with you - the lifeguard must be told.")
 
